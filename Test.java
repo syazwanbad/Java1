@@ -30,8 +30,6 @@ public class Test {
             //Write to an output text file
             BufferedWriter bufferedWriter =
                     new BufferedWriter(new FileWriter("output.bin"));
-            
-            //System.out.println("\nEnter Input: " + s1 + "\n");
             do
             {
                 System.out.println("\nEnter Input: " + s1 + "\n");
@@ -49,9 +47,6 @@ public class Test {
                     System.out.print("\nEnter 'q' to quit, enter string to continue:  \t");
                     s1 = scan.nextLine();
                 }
-                
-                //System.out.print("\nEnter 'q' to quit, enter string to continue:  \t");
-                //s1 = scan.nextLine();
                 
             } while(!s1.equals("q"));
             
@@ -72,9 +67,7 @@ public class Test {
         catch(IOException ex) {
             System.out.println(
                 "Error reading file '" 
-                + fileName + "'");                  
-            // Or we could just do this: 
-            // ex.printStackTrace();
+                + fileName + "'");
         }
     }
 }
